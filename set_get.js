@@ -1,11 +1,13 @@
 /*
  * object.watch polyfill
  *
- * 2012-04-03
  *
- * By Eli Grey, http://eligrey.com
+ *
+ *
  * Public Domain.
  * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+ * 
+ * 
  */
 
 // object.watch
