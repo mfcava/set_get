@@ -5,7 +5,7 @@ function AdobeEverestTech__Tracking_Pixel(pageName) {
 	*/
 	var AdobeEverestTech__Tracking_Pixel = new Image(1, 1);
 	AdobeEverestTech__Tracking_Pixel.src="//pixel.everesttech.net/px2/4507__?px_evt=t&ev_" + pageName +"=1";
-	console.log("Firre AdobeEverestTech__Tracking_Pixel: "+"//pixel.everesttech.net/px2/4507__?px_evt=t&ev_" + pageName +"=1")
+	console.log("Fire AdobeEverestTech__Tracking_Pixel: "+"//pixel.everesttech.net/px2/4507__?px_evt=t&ev_" + pageName +"=1")
 	document.body.appendChild(AdobeEverestTech__Tracking_Pixel);
 }
 
@@ -36,6 +36,13 @@ function DoubleClick__Tracking_Pixel(vehicleBrand,vehicleModel,dealerID) {
 	//
 	// var scriptNode=document.getElementById("DoubleClickSpotlightTag3248448");
 	// scriptNode.parentNode.insertBefore(newImg,scriptNode);
+	console.log("Fire DoubleClick__Tracking_Pixel: "+ 
+		"//ad.doubleclick.net/ddm/activity/src=4396110;type=traffic;cat=traffic;" +
+		"u1="+vehicleBrand+";"+
+		"u2="+vehicleBrand+";"+
+		"u3="+vehicleModel+";"+
+		"u4="+dealerID+";"+
+		"dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=" + a + "?");
 	document.body.appendChild(DoubleClick__Tracking_Pixel);
 	//]]>
 	// </script>
