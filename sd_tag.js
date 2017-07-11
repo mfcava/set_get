@@ -1,10 +1,10 @@
-function AdobeEverestTech__Tracking_Pixel() {
+function AdobeEverestTech__Tracking_Pixel(pageName) {
 	/* Adobe EverestTech Tag
 		Activity:      Traffic
 		Creation Date: 03/16/2017
 	*/
 	var AdobeEverestTech__Tracking_Pixel = new Image(1, 1);
-	AdobeEverestTech__Tracking_Pixel.src="http://pixel.everesttech.net/px2/4507?px_evt=t&ev_" + digitalData.page.pageInfo.pageName+"=1";
+	AdobeEverestTech__Tracking_Pixel.src="http://pixel.everesttech.net/px2/4507__?px_evt=t&ev_" + pageName +"=1";
 	document.body.appendChild(AdobeEverestTech__Tracking_Pixel);
 }
 
