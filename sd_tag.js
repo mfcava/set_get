@@ -11,7 +11,7 @@ function AdobeEverestTech__Tracking_Pixel(pageName) {
 
 
 
-function DoubleClick__Tracking_Pixel() {
+function DoubleClick__Tracking_Pixel(vehicleBrand,vehicleModel,dealerID) {
 	/* DoubleClick Floodlight Tag 
 		Activity:      Traffic
 		Creation Date: 03/16/2017
@@ -25,10 +25,10 @@ function DoubleClick__Tracking_Pixel() {
 	// var newImg=document.createElement("img");
 	var DoubleClick__Tracking_Pixel = new Image(1,1);
 	DoubleClick__Tracking_Pixel.src = "https://ad.doubleclick.net/ddm/activity/src=4396110;type=traffic;cat=traffic;"+
-		"u1="+digitalData.page.pageInfo.vehicleBrand+";"+
-		"u2="+digitalData.page.pageInfo.vehicleBrand+";"+
-		"u3="+digitalData.page.pageInfo.vehicleModel+";"+
-		"u4="+digitalData.page.pageInfo.vehicleModel+";"+
+		"u1="+vehicleBrand+";"+
+		"u2="+vehicleBrand+";"+
+		"u3="+vehicleModel+";"+
+		"u4="+dealerID+";"+
 		"dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=" + a + "?";
 		newImg.alt="";
 		newImg.height="1";
