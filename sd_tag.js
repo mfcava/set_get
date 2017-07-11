@@ -52,7 +52,7 @@ function DoubleClick__Tracking_Pixel() {
 
 
 
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+// <script type="text/javascript" src=""></script>
 function GoogleAdwords__Conversion() {
 	/* Google Adwords Form Submission Tags 
 		Activity: 		Traffic
@@ -60,6 +60,7 @@ function GoogleAdwords__Conversion() {
 	*/
 	// <script type="text/javascript">
 	/* <![CDATA[ */
+	
 	goog_snippet_vars = function() {
 		var w = window;
 		w.google_conversion_id = 982778857;
@@ -83,6 +84,13 @@ function GoogleAdwords__Conversion() {
 	}
 	/* ]]> */
 	//</script>
+	var jsElm = document.createElement("script");
+	    // set the type attribute
+	    jsElm.type = "application/javascript";
+	    // make the script element load file
+	    jsElm.src = "//www.googleadservices.com/pagead/conversion_async.js";
+	    // finally insert the element to the body element in order to load the script
+	    document.body.appendChild(jsElm);
 }
 
 
