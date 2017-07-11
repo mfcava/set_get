@@ -21,19 +21,19 @@ function DoubleClick__Tracking_Pixel() {
 	var a = axel * 10000000000000;
 	//
 	//
-	// var newImg=document.createElement('img');
-	var DoubleClick__Tracking_Pixel = new Image(1, 1);
-	var DoubleClick__Tracking_Pixel.src='https://ad.doubleclick.net/ddm/activity/src=4396110;type=traffic;cat=traffic;'+
-		'u1='+digitalData.page.pageInfo.vehicleBrand+';'+
-		'u2='+digitalData.page.pageInfo.vehicleBrand+';'+
-		'u3='+digitalData.page.pageInfo.vehicleModel+';'+
-		'u4='+digitalData.page.pageInfo.vehicleModel+';'+
-		'dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?'; newImg.width="1";
+	// var newImg=document.createElement("img");
+	var DoubleClick__Tracking_Pixel = new Image(1,1);
+	DoubleClick__Tracking_Pixel.src = "https://ad.doubleclick.net/ddm/activity/src=4396110;type=traffic;cat=traffic;"+
+		"u1="+digitalData.page.pageInfo.vehicleBrand+";"+
+		"u2="+digitalData.page.pageInfo.vehicleBrand+";"+
+		"u3="+digitalData.page.pageInfo.vehicleModel+";"+
+		"u4="+digitalData.page.pageInfo.vehicleModel+";"+
+		"dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=" + a + "?";
 		newImg.alt="";
 		newImg.height="1";
 	//
 	//
-	// var scriptNode=document.getElementById('DoubleClickSpotlightTag3248448');
+	// var scriptNode=document.getElementById("DoubleClickSpotlightTag3248448");
 	// scriptNode.parentNode.insertBefore(newImg,scriptNode);
 	document.body.appendChild(DoubleClick__Tracking_Pixel);
 	//]]>
@@ -72,12 +72,12 @@ function GoogleAdwords__Conversion() {
 		window.google_conversion_format = "3";
 		var opt = new Object();
 		opt.onload_callback = function() {
-			if (typeof(url) != 'undefined') {
+			if (typeof(url) != "undefined") {
 				window.location = url;
 			}
 		}
-		var conv_handler = window['google_trackConversion'];
-		if (typeof(conv_handler) == 'function') {
+		var conv_handler = window["google_trackConversion"];
+		if (typeof(conv_handler) == "function") {
 			conv_handler(opt);
 		}
 	}
