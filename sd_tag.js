@@ -72,7 +72,7 @@ function GoogleAdwords__Conversion() {
 		}
 	}
 
-  console.log("%c Fire GoogleAdwords__Conversion: //www.googleadservices.com/pagead/conversion_async.js");
+  console.log("%c Fire GoogleAdwords__Conversion: //www.googleadservices.com/pagead/conversion_async.js", "color: red");
   var jsElm = document.createElement("script");
 	jsElm.type = "application/javascript";
 	jsElm.src = "//www.googleadservices.com/pagead/conversion_async.js";
@@ -108,7 +108,7 @@ function DoubleClick__Conversion(vehicleBrand, vehicleModel, dealershipName, pro
 			"u3="+ vehicleModel   +"\n"+
 			"u4="+ dealershipName +"\n"+
 			"u5="+ program_type+"\n"+
-			"ord="+OrderID+"\n", "color: blue");
+			"ord="+OrderID+"\n", "color: red");
   }
 }
 
