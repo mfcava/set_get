@@ -125,7 +125,7 @@ function sd_tracking_tags() {
     //
     if ( (typeof(digitalData.page.pageInfo.pageName)  == "undefined") || ( digitalData.page.pageInfo.vehicleModel  == "" ) ) {
         digitalData.page.pageInfo.watch("pageName", function (id, oldval, newval) {
-            console.log("%c pageName." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             pn = newval;
             AdobeEverestTech__Tracking_Pixel( pn );
             return newval;
@@ -134,7 +134,7 @@ function sd_tracking_tags() {
 
     if ((typeof(digitalData.page.pageInfo.vehicleBrand)  == "undefined") || ( digitalData.page.pageInfo.vehicleModel  == "" )) {
         digitalData.page.pageInfo.watch("vehicleBrand", function (id, oldval, newval) {
-            console.log("%c vehicleModel." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             vb = newval
             DoubleClick__Tracking_Pixel( vb, vm, di );
             return newval;
@@ -143,7 +143,7 @@ function sd_tracking_tags() {
 
     if ((typeof(digitalData.page.pageInfo.vehicleModel)  == "undefined") || ( digitalData.page.pageInfo.vehicleModel  == "" )) {
         digitalData.page.pageInfo.watch("vehicleModel", function (id, oldval, newval) {
-            console.log("%c vehicleModel." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             vm = newval;
             DoubleClick__Tracking_Pixel( vb, vm, di );
         return newval;
@@ -153,7 +153,7 @@ function sd_tracking_tags() {
 
     if ((typeof(digitalData.page.pageInfo.dealerID)  == "undefined") || ( digitalData.page.pageInfo.dealerID  == "" )) {
         digitalData.page.pageInfo.watch("dealerID", function (id, oldval, newval) {
-            console.log("%c dealerID." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             di = newval;
             DoubleClick__Tracking_Pixel( vb, vb, di );
         return newval;
@@ -163,7 +163,7 @@ function sd_tracking_tags() {
 
     if ((typeof(digitalData.page.pageInfo.transactionID)  == "undefined") || ( digitalData.page.pageInfo.transactionID  == "" )) {
         digitalData.page.pageInfo.watch("transactionID", function (id, oldval, newval) {
-            console.log("%c transactionID." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             DoubleClick__Conversion( digitalData.page.pageInfo.vehicleBrand, digitalData.page.pageInfo.vehicleModel, digitalData.page.pageInfo.dealerID, "XXX", newval, 100 );
         return newval;
         });
@@ -184,7 +184,7 @@ function sd_conversion_tags() {
     //
     if ((typeof(digitalData.page.pageInfo.vehicleBrand)  == "undefined") || ( digitalData.page.pageInfo.vehicleModel  == "" )) {
         digitalData.page.pageInfo.watch("vehicleBrand", function (id, oldval, newval) {
-            console.log("%c vehicleModel." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             DoubleClick__Conversion( newval, vm, di, pt, oi, rv );
             return newval;
         });
@@ -192,7 +192,7 @@ function sd_conversion_tags() {
 
     if ((typeof(digitalData.page.pageInfo.vehicleModel)  == "undefined") || ( digitalData.page.pageInfo.vehicleModel  == "" )) {
         digitalData.page.pageInfo.watch("vehicleModel", function (id, oldval, newval) {
-            console.log("%c vehicleModel." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             DoubleClick__Conversion( vb, newval, di, pt, oi, rv );
             return newval;
         });
@@ -201,7 +201,7 @@ function sd_conversion_tags() {
 
     if ((typeof(digitalData.page.pageInfo.dealerID)  == "undefined") || ( digitalData.page.pageInfo.dealerID  == "" )) {
         digitalData.page.pageInfo.watch("dealerID", function (id, oldval, newval) {
-            console.log("%c dealerID." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             DoubleClick__Conversion( vb, vm, newval, pt, oi, rv );
             return newval;
         });
@@ -210,7 +210,7 @@ function sd_conversion_tags() {
 
     if ((typeof(digitalData.page.pageInfo.transactionID)  == "undefined") || ( digitalData.page.pageInfo.transactionID  == "" )) {
         digitalData.page.pageInfo.watch("transactionID", function (id, oldval, newval) {
-            console.log("%c transactionID." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
+            console.log("%c digitalData.page.pageInfo." + id + " changed from: '" + oldval + "' to '" + newval + "'", "color: CornflowerBlue");
             DoubleClick__Conversion( vb, vm, di, pt, newval, rv );
             return newval;
         });
